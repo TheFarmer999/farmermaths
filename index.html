@@ -2,6 +2,19 @@
 <html>
 <head>
 	<title>Farmer Maths</title>
+	<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+    </script> 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
@@ -16,15 +29,25 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-<header>
-	<br/><br/>
+<header style="background-color: rgb(0, 0, 0); color:rgb(255, 255, 255);">
+	<br/>
 	<center>
-		<h1><u>Farmer Maths</u></h1>
-
-		<p>Welcome! <b>Farmer Maths</b> is a collection of problems in pure and applied mathematics written by me.</p>
+		<h1>Farmer Maths</h1>
 	</center>
+	<br/>
 </header>
 
+
+<center>
+	<br/>
+	<p>Welcome! <b>Farmer Maths</b> is a collection of problems in pure and applied mathematics written by me.</p>
+	<br/>
+	<div style="padding:40px; background-color: rgb(255, 255, 255); max-width: 720px; border-style: solid;">
+	<p>Where $\sigma$ and $\mu$ are constants, and for all $k \in \mathbb{Z}$ $$X_k \sim \mathcal{N}(\mu, \sin(\frac{k \pi}{3}) \sigma^2)$$ Define a random variable $Y$ by $$Y = \sum_{k=0}^{50} X_k.$$
+	Find the exact value of $z$ such that $\mathbb{P}(Y \leq 100 \mu) = \Phi(z)$.</p>
+	</div>
+	<br/>
+</center>
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4" style="padding:24px;">
